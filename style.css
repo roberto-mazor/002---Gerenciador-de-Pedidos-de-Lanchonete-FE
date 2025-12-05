@@ -1,6 +1,7 @@
 /* Importação de uma fonte temática (ex: 'Bebas Neue' para um estilo bold/retrô) */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
 
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
@@ -14,23 +15,59 @@ body {
     /* Ajuste para as duas linhas do nome */
 }
 
-/* Estilo da Seção Hero (Destaque Principal) */
+/* ---------------------------------------------------------------- */
+/* ESTILO DA SEÇÃO HERO AJUSTADO PARA A IMAGEM FORNECIDA */
+/* ---------------------------------------------------------------- */
+/* Importação de uma fonte temática (ex: 'Bebas Neue' para um estilo bold/retrô) */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+
+/* ... (resto do seu CSS) ... */
+
+/* ---------------------------------------------------------------- */
+/* ESTILO DA SEÇÃO HERO AJUSTADO PARA IMAGEM NA ESQUERDA E TEXTO NA DIREITA */
+/* ---------------------------------------------------------------- */
 #hero {
-    /* Imagem de fundo temática, substitua pelo seu caminho */
-    background-image: url('img/fundo-hamburgueria.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 450px;
-    /* Altura mínima para a seção */
+    /* O NOME DO ARQUIVO DEVE SER 'img/foto-hero-burguer.jpg' (ou .png, conforme seu caminho) */
+    background-image: url('img/6802029.svg');
+
+    /* Mantém a imagem inteira (menor) dentro da área */
+    background-size: contain;
+
+    /* Garante que a imagem não se repita */
+    background-repeat: no-repeat;
+
+    /* Alinha a imagem à ESQUERDA */
+    background-position: left center;
+
+    min-height: 550px;
     position: relative;
+    background-color: #000;
+
+    /* MUDANÇA PRINCIPAL 1: Centraliza o conteúdo (o texto) horizontalmente */
+    /* Como a imagem ocupa o lado esquerdo, o texto será centralizado no espaço restante */
+    justify-content: center !important;
 }
 
 /* Título na Seção Hero */
 #hero h2 {
     font-family: 'Bebas Neue', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    /* Sombra para dar destaque */
+
+    /* MUDANÇA PRINCIPAL 2: Centraliza o texto e define sua largura */
+    margin-left: ;
+    /* Remove o margin-right: 20px; do passo anterior */
+    margin-right: 0;
+    /* Garante que não há margem extra na direita */
+    text-align: center;
+    /* Centraliza as linhas do texto */
+
+    /* Limita o texto para não invadir a área da imagem */
+    max-width: 50%;
+    padding: 0 20px;
+    /* Remove padding antigo e adiciona um padding lateral simétrico */
 }
+
+/* ---------------------------------------------------------------- */
 
 /* Estilo dos Cards de Produto */
 #lista-produtos .card {
