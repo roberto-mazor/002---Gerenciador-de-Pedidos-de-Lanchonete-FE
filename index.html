@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Burgão Delícia - A Melhor Hamburgueria da Cidade</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="cabecalho">
+            <div class="container-fluid">
+                <a class="navbar-brand text-warning fs-3 fw-bold" href="#">
+                    Burgão<br><span class="text-danger">Delícia</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" href="fazer-pedido.html">Fazer Pedido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" href="listar-pedidos.html">Meus Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" href="buscar-pedidos.html">Buscar Pedidos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid p-0">
+        <div class="hero p-5 text-center text-white d-flex flex-column justify-content-center align-items-center"
+            id="hero">
+            <h2 class="display-3 fw-bolder text-warning mb-4">O Melhor BURGÃO<br><span class="text-danger">da
+                    cidade</span></h2>
+
+
+            [Image of a delicious large burger with cheese and lettuce]
+
+        </div>
+
+        <section class="container my-5" id="lista-produtos">
+            <h3 class="text-center mb-5 text-dark fw-bold display-5">Nosso Menu Clássico 🍟</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <div class="card h-100 border-danger shadow-lg text-center bg-light">
+                        <img src="img/x-salada.png" class="card-img-top p-3" alt="X-Salada">
+                        <div class="card-body">
+                            <h4 class="card-title text-danger fw-bold">X-Salada</h4>
+                            <p class="card-text text-dark">Hambúrguer de 180g, queijo, alface, tomate e maionese
+                                especial.</p>
+                            <h5 class="text-warning fw-bolder">R$ 24,90</h5>
+                            <a href="fazer-pedido.html" class="btn btn-danger mt-3 fw-bold">Pedir Agora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-danger shadow-lg text-center bg-light">
+                        <img src="img/x-bacon.png" class="card-img-top p-3" alt="X-Bacon">
+                        <div class="card-body">
+                            <h4 class="card-title text-danger fw-bold">X-Bacon</h4>
+                            <p class="card-text text-dark">O clássico com fatias crocantes de bacon, queijo e molho da
+                                casa.</p>
+                            <h5 class="text-warning fw-bolder">R$ 27,90</h5>
+                            <a href="fazer-pedido.html" class="btn btn-danger mt-3 fw-bold">Pedir Agora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-danger shadow-lg text-center bg-light">
+                        <img src="img/x-Fominha.png" class="card-img-top p-3" alt="X-Fominha">
+                        <div class="card-body">
+                            <h4 class="card-title text-danger fw-bold">X-Fominha</h4>
+                            <p class="card-text text-dark">Dois hambúrgueres, muito queijo e a nossa dupla secreta de
+                                molhos.</p>
+                            <h5 class="text-warning fw-bolder">R$ 32,50</h5>
+                            <a href="fazer-pedido.html" class="btn btn-danger mt-3 fw-bold">Pedir Agora</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5" id="rodape">
+        <p class="mb-0">&copy; Burgão Delícia - 2025 - Todos direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6m1R3FvI6FjQ12F7o5+bTf8yXp3oE8wH+nF1v7p4+rVl1z0K+vMvN1tH9ZtO6d"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

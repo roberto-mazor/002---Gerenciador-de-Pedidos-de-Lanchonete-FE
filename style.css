@@ -1,0 +1,64 @@
+/* Importação de uma fonte temática (ex: 'Bebas Neue' para um estilo bold/retrô) */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    /* Fundo leve para destacar o conteúdo */
+}
+
+/* Estilo do cabeçalho (logo) */
+#cabecalho .navbar-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 0.8;
+    /* Ajuste para as duas linhas do nome */
+}
+
+/* Estilo da Seção Hero (Destaque Principal) */
+#hero {
+    /* Imagem de fundo temática, substitua pelo seu caminho */
+    background-image: url('img/fundo-hamburgueria.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    /* Altura mínima para a seção */
+    position: relative;
+}
+
+/* Título na Seção Hero */
+#hero h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Sombra para dar destaque */
+}
+
+/* Estilo dos Cards de Produto */
+#lista-produtos .card {
+    transition: transform 0.3s ease;
+    /* Efeito de transição ao passar o mouse */
+}
+
+#lista-produtos .card:hover {
+    transform: translateY(-5px);
+    /* Efeito de elevação */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2) !important;
+    /* Sombra mais forte */
+}
+
+#lista-produtos .card-title {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+#lista-produtos .card-img-top {
+    max-height: 200px;
+    /* Altura máxima para as imagens dos lanches */
+    object-fit: contain;
+    /* Garante que a imagem se ajuste sem cortar */
+}
+
+/* Estilo do Rodapé */
+#rodape {
+    /* Cor de fundo escura para contraste */
+    background-color: #343a40 !important;
+}
